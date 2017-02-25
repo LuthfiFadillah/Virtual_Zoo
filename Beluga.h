@@ -1,16 +1,16 @@
-#ifndef DOLPHIN_H
-#define DOLPHIN_H
+#ifndef BELUGA_H
+#define BELUGA_H
 #include "Cetacea.h"
 #include "Animal.h"
-class Dolphin:public Cetacea{
+class Beluga:public Cetacea{
 //method
 public:
 	//ctor with param
-	Dolphin(int bb, grid koordinat);
+	Beluga(int bb, grid koordinat);
 	//copy costructor
-	Dolphin (const Dolphin&);
+	Beluga (const Dolphin&);
 	//destructor
-	~Dolphin();
+	~Beluga();
 	//polymorphism interaksi
 	void interact();
 

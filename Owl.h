@@ -1,16 +1,16 @@
-#ifndef DOLPHIN_H
-#define DOLPHIN_H
-#include "Cetacea.h"
+#ifndef OWL_H
+#define OWL_H
+#include "Strigiformes.h"
 #include "Animal.h"
-class Dolphin:public Cetacea{
+class Owl:public Strigiformes{
 //method
 public:
 	//ctor with param
-	Dolphin(int bb, grid koordinat);
+	Owl(int bb, grid koordinat);
 	//copy costructor
-	Dolphin (const Dolphin&);
+	Owl (const Dolphin&);
 	//destructor
-	~Dolphin();
+	~Owl();
 	//polymorphism interaksi
 	void interact();
 
