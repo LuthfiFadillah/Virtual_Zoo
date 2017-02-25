@@ -9,7 +9,7 @@ public:
 	//return jenis habitat
 	bool get_habitat();
 	//bergerak sesuai constrain habitat
-	void move(bool water_habitat, bool land_habitat, bool air_habitat, point animal_koordinat, map);
+	void move(point animal_koordinat, map);
 
 protected:
 	//set koordinat animals
