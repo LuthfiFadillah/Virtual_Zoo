@@ -7,3 +7,4 @@ v1.0 (24/02/2017)
 
 v1.1 (25/02/2017)
 - Upload Anseriformes.h, Artiodactyls.h, Duck.h, Swan.h, Giraffe.h, BigHornSheep.h, Deer.h
+- Update Cetacea.h
