@@ -12,3 +12,7 @@ v1.1 (25/02/2017)
 
 v1.2 (26/02/2017)
 - Upload Grid.h & Grid.cpp (by : Luthfi & Alivia)
+
+v2.0 (01/03/2017)
+- Pematangan konsep kelas animals - ordo - spesies
+- Upload Cassowary.h, Cassowary.cpp, Casuariformes.h, Casuariformes.cpp, Chameleon.h, Chameleon.cpp, GreatWhiteShark.h, GreatWhiteShark.cpp, Python.h, Python.cpp, Selacimorpha.h, Selacimorpha.cpp, Squamata.h, Squamata.cpp
