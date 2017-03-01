@@ -6,17 +6,10 @@ class Parrots:public Psittaciformes{
 //method
 public:
 	//ctor with param
-	Parrots(int bb, grid koordinat);
-	//copy costructor
-	Parrots (const Dolphin&);
-	//destructor
-	~Parrots();
+	Parrots(int bb);
+	
 	//polymorphism interaksi
 	void interact();
-
-
-//atribut
-private:
 	
 };
 #endif

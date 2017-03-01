@@ -6,17 +6,11 @@ class Dolphin:public Cetacea{
 //method
 public:
 	//ctor with param
-	Dolphin(int bb, grid koordinat);
-	//copy costructor
-	Dolphin (const Dolphin&);
-	//destructor
-	~Dolphin();
+	Dolphin(int bb);
+	
 	//polymorphism interaksi
 	void interact();
 
-
-//atribut
-private:
 	
 };
 #endif

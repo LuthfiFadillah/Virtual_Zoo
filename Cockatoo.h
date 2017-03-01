@@ -6,17 +6,10 @@ class Cockatoo:public Psittaciformes{
 //method
 public:
 	//ctor with param
-	Cockatoo (int bb, grid koordinat);
-	//copy costructor
-	Cockatoo (const Dolphin&);
-	//destructor
-	~Cockatoo();
+	Cockatoo(int bb);
+	
 	//polymorphism interaksi
 	void interact();
 
-
-//atribut
-private:
-	
 };
 #endif

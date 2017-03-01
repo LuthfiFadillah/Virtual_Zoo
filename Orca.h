@@ -6,17 +6,10 @@ class Beluga:public Cetacea{
 //method
 public:
 	//ctor with param
-	Orca(int bb, grid koordinat);
-	//copy costructor
-	Orca (const Dolphin&);
-	//destructor
-	~Orca();
+	Orca(int bb);
+	
 	//polymorphism interaksi
 	void interact();
 
-
-//atribut
-private:
-	
 };
 #endif

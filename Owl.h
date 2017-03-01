@@ -6,17 +6,10 @@ class Owl:public Strigiformes{
 //method
 public:
 	//ctor with param
-	Owl(int bb, grid koordinat);
-	//copy costructor
-	Owl (const Dolphin&);
-	//destructor
-	~Owl();
+	Owl(int bb);
+	
 	//polymorphism interaksi
 	void interact();
 
-
-//atribut
-private:
-	
 };
 #endif
