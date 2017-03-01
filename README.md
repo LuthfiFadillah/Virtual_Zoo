@@ -11,4 +11,4 @@ v1.1 (25/02/2017)
 - Update Cetacea.h (by : Emil)
 
 v1.2 (26/02/2017)
-- Upload Grid.h & Grid.cpp (by : Luthfi)
+- Upload Grid.h & Grid.cpp (by : Luthfi & Alivia)
