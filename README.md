@@ -16,3 +16,4 @@ v1.2 (26/02/2017)
 v2.0 (01/03/2017)
 - Pematangan konsep kelas animals - ordo - spesies
 - Upload Cassowary.h, Cassowary.cpp, Casuariformes.h, Casuariformes.cpp, Chameleon.h, Chameleon.cpp, GreatWhiteShark.h, GreatWhiteShark.cpp, Python.h, Python.cpp, Selacimorpha.h, Selacimorpha.cpp, Squamata.h, Squamata.cpp
+- Upload Psittaciformes.cpp, Strigiformes.cpp, Parrots.cpp, Owl.cpp, Orca.cpp, Cockatoo.cpp, Beluga.cpp (by : Alivia)
