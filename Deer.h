@@ -6,17 +6,9 @@ class Deer:public Artiodactyls{
 //method
 public:
 	//ctor with param
-	Deer(int bb, grid koordinat);
-	//copy costructor
-	Deer (const Deer&);
-	//destructor
-	~Deer();
+	Deer(int bb);
+
 	//polymorphism interaksi
 	void interact();
-
-
-//atribut
-private:
-
 };
 #endif
