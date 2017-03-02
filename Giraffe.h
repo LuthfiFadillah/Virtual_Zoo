@@ -6,17 +6,8 @@ class Giraffe:public Artiodactyls{
 //method
 public:
 	//ctor with param
-	Giraffe(int bb, grid koordinat);
-	//copy costructor
-	Giraffe (const Giraffe&);
-	//destructor
-	~Giraffe();
-	//polymorphism interaksi
+	Giraffe(int bb);
+
 	void interact();
-
-
-//atribut
-private:
-
 };
 #endif
