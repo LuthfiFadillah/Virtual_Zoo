@@ -19,5 +19,5 @@ v2.0 (01/03/2017)
 - Upload Psittaciformes.cpp, Strigiformes.cpp, Parrots.cpp, Owl.cpp, Orca.cpp, Cockatoo.cpp, Beluga.cpp (by : Alivia)
 
 v.2.1 (02/03/2017)
--Upload Primates.h, Carnivora.h, Lemur.h, Tarsier.h, Gorilla.h, Monkey.h, Meerkat.h, Cheetah.h, Lion.h, Wolf.h (by Emil)
--Upload Primate.cpp, Carnivora.cpp, Lemur.cpp, Tarsier.cpp, Gorilla.cpp, Monkey.cpp, Meerkat.cpp, Cheetah.cpp, Lion.cpp, Wolf.cpp (by: Emil)
+- Upload Primates.h, Carnivora.h, Lemur.h, Tarsier.h, Gorilla.h, Monkey.h, Meerkat.h, Cheetah.h, Lion.h, Wolf.h (by: Emil)
+- Upload Primate.cpp, Carnivora.cpp, Lemur.cpp, Tarsier.cpp, Gorilla.cpp, Monkey.cpp, Meerkat.cpp, Cheetah.cpp, Lion.cpp, Wolf.cpp (by: Emil)
