@@ -10,10 +10,10 @@ using namespace std;
 
 	//ctor with param
 	Cassowary::Cassowary(int bb, int x, int y): Casuariformes(false, x, y) {
-		cout << "ctor cassowary\n";
+		cout << "\nctor cassowary\n";
 		Cassowary::set_berat(bb);
+		//cout << I.get_absis() << "|" << I.get_ordinat() << endl;
 		cout << this->get_koordinat().get_absis() << "|" << this->get_koordinat().get_ordinat() << endl;
-		cout << this->absis << "|" << this->ordinat << endl;
 		cout << "selesai ctor cassowary\n";
 	}
 	//destructor

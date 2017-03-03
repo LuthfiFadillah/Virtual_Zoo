@@ -28,8 +28,6 @@ public:
 	
 	//set koordinat
 	void set_koordinat(int x, int y);
-	int get_x();
-	int get_y();
 	
 	//habitat hewan
 	bool IsLandAnimal();
@@ -43,8 +41,6 @@ public:
 //atribut
 protected:
 	int berat_badan;
-	int absis;
-	int ordinat;
 	Indices koordinat;
 	int makanan;
 	const bool land_animal;
