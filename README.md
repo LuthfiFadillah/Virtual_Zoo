@@ -23,4 +23,4 @@ v.2.1 (02/03/2017)
 - Upload Primate.cpp, Carnivora.cpp, Lemur.cpp, Tarsier.cpp, Gorilla.cpp, Monkey.cpp, Meerkat.cpp, Cheetah.cpp, Lion.cpp, Wolf.cpp (by: Emil)
 
 v2.2 (03/03/2017)
-- upload Animals.cpp, Animals.h, Casuariformes.cpp, Casuariformes.h, Cassowary.cpp, dan Cassowary.h 2 versi ctor: parameter int, int (pada branch master) dan parameter Indices (pada branch WithIndices) (by: Suzane)
+- upload Animals.cpp, Animals.h, Casuariformes.cpp, Casuariformes.h, Cassowary.cpp, dan Cassowary.h 2 versi ctor: parameter int, int (pada branch master) dan parameter Indices (pada branch WithIndices) (by: Alivia, Suzane)
