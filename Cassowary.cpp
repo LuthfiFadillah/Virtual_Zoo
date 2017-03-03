@@ -1,6 +1,7 @@
 #include "Cassowary.h"
 #include "Casuariformes.h"
 #include "Animals.h"
+#include "Indices.h"
 #include <iostream>
 using namespace std;
 
@@ -8,8 +9,12 @@ using namespace std;
 //method
 
 	//ctor with param
-	Cassowary::Cassowary(int bb) {
-		set_berat(bb);
+	Cassowary::Cassowary(int bb, int x, int y): Casuariformes(false, x, y) {
+		cout << "ctor cassowary\n";
+		Cassowary::set_berat(bb);
+		cout << this->get_koordinat().get_absis() << "|" << this->get_koordinat().get_ordinat() << endl;
+		cout << this->absis << "|" << this->ordinat << endl;
+		cout << "selesai ctor cassowary\n";
 	}
 	//destructor
 	//polymorphism interaksi

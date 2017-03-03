@@ -1,12 +1,12 @@
 //Animals.h
 #ifndef ANIMALS_H
 #define ANIMALS_H
-//#include "Grid.h"
+#include "Indices.h"
 class Animals{
 //method
 public:
 	//ctor
-	Animals(int makan, bool land, bool water, bool air);
+	Animals(int makan, bool land, bool water, bool kejinakan, bool air, int x, int y);
 	
 	//dtor
 	~Animals();
@@ -24,22 +24,33 @@ public:
 	void set_berat(int bb);
 	
 	//return koordinat animals
-	//Grid get_koordinat();
+	Indices get_koordinat();
+	
+	//set koordinat
+	void set_koordinat(int x, int y);
+	int get_x();
+	int get_y();
 	
 	//habitat hewan
 	bool IsLandAnimal();
 	bool IsWaterAnimal();
 	bool IsAirAnimal();
+	
+	//kejinakan
+	bool IsJinak();
 
 
 //atribut
 protected:
 	int berat_badan;
-	//Grid animal_koordinat;
+	int absis;
+	int ordinat;
+	Indices koordinat;
 	int makanan;
 	const bool land_animal;
 	const bool water_animal;
 	const bool air_animal;
+	const bool jinak;
 };
 
 #endif
