@@ -8,7 +8,7 @@ class Cassowary: public Casuariformes {
 //method
 public:
 	//ctor with param
-	Cassowary(int bb, int x, int y);
+	Cassowary(int bb, Indices I);
 	//destructor
 	//polymorphism interaksi
 	void interact();

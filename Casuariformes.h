@@ -8,7 +8,7 @@ class Casuariformes: public Animals{
 //method
 public:	
 	//ctor
-	Casuariformes(bool kejinakan, int x, int y);
+	Casuariformes(bool kejinakan, Indices I);
 	//bergerak sesuai constrain habitat
 	//void move(bool water_habitat, bool land_habitat, bool air_habitat, point animal_koordinat, map);
 	

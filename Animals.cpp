@@ -4,13 +4,11 @@
 using namespace std;
 
 //ctor
-Animals::Animals(int makan, bool land, bool water, bool air, bool kejinakan, int x, int y): makanan(makan), land_animal(land), water_animal(water), air_animal(air), jinak(kejinakan) {
-	//cout<<x<<endl;
-	cout << "ctor animal " << endl;
-	Indices koordinat(x,y);
+Animals::Animals(int makan, bool land, bool water, bool air, bool kejinakan, Indices I): makanan(makan), land_animal(land), water_animal(water), air_animal(air), jinak(kejinakan) {
+	cout << "\nctor animal " << endl;
+	koordinat = I;
+	cout << I.get_absis() << "---" << I.get_ordinat() << endl;
 	cout << koordinat.get_absis() << " " << koordinat.get_ordinat() << endl;
-	absis = x;
-	ordinat = y;
 	cout << "selesai ctor" << endl;
 }
 
@@ -38,14 +36,6 @@ Indices Animals::get_koordinat() {
 void Animals::set_koordinat(int x, int y) {
 	koordinat.set_absis(x);
 	koordinat.set_ordinat(y);
-}
-
-int Animals::get_x() {
-	return absis;
-}
-
-int Animals::get_y() {
-	return ordinat;
 }
 
 bool Animals::IsLandAnimal() {
