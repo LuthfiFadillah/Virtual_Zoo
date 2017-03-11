@@ -1,6 +1,6 @@
 #include "Indices.h"
-//#include <iostream>
-//using namespace std;
+#include <iostream>
+using namespace std;
 
 	//ctor
 	Indices::Indices() {
@@ -10,12 +10,13 @@
 	
 	//ctor with param
 	Indices::Indices(int absis, int ordinat) {
-		x = absis; y = ordinat;
+		Indices::x = absis; Indices::y = ordinat;
 	}
 	
 	//cctor
-	Indices::Indices(Indices&) {
-		
+	Indices::Indices(Indices& I) {
+		x = I.get_absis();
+		y = I.get_ordinat();
 	}
 	//dtor
 	Indices::~Indices() {
@@ -23,8 +24,12 @@
 	}
 	//operator = 
 	Indices& Indices::operator= (Indices& I) {
-		x = I.get_absis();
-		y = I.get_ordinat();
+		cout <<  I.get_absis() << " dan " << I.get_ordinat() << endl;
+		Indices::x = I.x;
+		Indices::y = I.y;
+		cout << "jadi" << endl;
+		cout << this->x << " dan " << this->y << endl;
+		return *this;
 	}
 	//getter
 	int Indices::get_absis() {

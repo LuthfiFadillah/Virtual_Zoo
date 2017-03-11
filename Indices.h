@@ -24,7 +24,7 @@ public:
 	//cout
 	//friend std::ostream& operator<<(std::ostream &os, Indices& I);
 //atribut
-private:
+protected:
 	int x;
 	int y;
 };
