@@ -1,0 +1,31 @@
+B : Beluga
+S : Big Horn Sheep
+C : Cassowary
+H : Chameleon
+T : Cheetah
+O : Cockatoo
+D : Deer
+N : Dolphin
+U : Duck
+G : Girrafe
+J : Gorilla
+K : Great White Shark
+E : Lemur
+I : Lion
+M : Meerkat
+Y : Monkey
+$ : Orca
+Z : Owl
+X : Parrots
+V : Phyton
+Q : Swan
+F : Tarsier
+@ : Wolf
+P : Park
+R : Restaurant
+L : Land Habitat
+W : Water Habitat
+A : Air Habitat
+- : Road
++ : Entrance
+= : Exit
