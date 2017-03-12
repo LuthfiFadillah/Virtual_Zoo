@@ -11,6 +11,7 @@ public:
 	//destructor
 	//polymorphism interaksi
 	void interact();
-	
+
+	char Render();
 };
 #endif

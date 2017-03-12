@@ -13,3 +13,7 @@ using namespace std;
 	void Deer::interact(){
 		cout<< "Do you know where is santa house??" << endl;
 	}
+
+	char Deer::Render(){
+		return 'D';
+	}

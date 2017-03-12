@@ -14,3 +14,7 @@ using namespace std;
 	void GreatWhiteShark::interact() {
 		cout << "*Big grins* heyyo" << endl;
 	}
+
+	char GreatWhiteShark::Render(){
+		return 'K';
+	}

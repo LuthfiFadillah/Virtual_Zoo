@@ -16,3 +16,7 @@ using namespace std;
 	void Wolf::interact() {
 		cout << "AUUUUUUU" << endl;
 }
+
+char Wolf::Render(){
+	return '@';
+}

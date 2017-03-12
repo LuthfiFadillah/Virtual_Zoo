@@ -17,3 +17,7 @@ using namespace std;
 	void Lion::interact() {
 		cout << "ROAR" << endl;
 }
+
+char Lion::Render(){
+	return 'I';
+}

@@ -9,8 +9,12 @@ using namespace std;
 	Owl::Owl(int bb, int x, int y): Strigiformes(true, x, y) {
 		set_berat(bb);
 	}
-	
+
 	//polymorphism interaksi
 	void Owl::interact(){
 		cout << "Coccooo Coccooo" << endl;
+		}
+
+		char Owl::Render(){
+			return 'Z';
 		}

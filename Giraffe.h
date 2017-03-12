@@ -11,5 +11,6 @@ public:
 	Giraffe(int bb,int x, int y);
 
 	void interact();
+	char Render();
 };
 #endif

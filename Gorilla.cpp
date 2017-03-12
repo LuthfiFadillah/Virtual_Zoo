@@ -3,7 +3,7 @@
 #include "Animals.h"
 #include "Indices.h"
 #include <iostream>
-using namespace std;	
+using namespace std;
 
 	//ctor with param
 	Gorilla::Gorilla(int bb, int x, int y) : Primates(false,x,y){
@@ -13,4 +13,8 @@ using namespace std;
 	//polymorphism interaksi
 	void Gorilla::interact(){
 		cout<<"*thump thump*"<<endl;
+	}
+
+	char Gorilla::Render(){
+		return 'J';
 	}

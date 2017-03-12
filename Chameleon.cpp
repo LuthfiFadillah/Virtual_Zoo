@@ -15,3 +15,7 @@ using namespace std;
 	void Chameleon::interact() {
 		cout << "Smisshy slimi skinny\n";
 	}
+
+	char Chameleon::Render(){
+		return 'H';
+	}

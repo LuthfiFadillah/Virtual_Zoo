@@ -21,3 +21,7 @@ using namespace std;
 	void Cassowary::interact() {
 		cout << "I can't fly :(" << endl;
 	}
+
+	char Cassowary::Render(){
+		return 'C';
+	}

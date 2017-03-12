@@ -8,8 +8,12 @@ using namespace std;
 	Python::Python(int bb, int x, int y) : Squamata(false,x,y) {
 		set_berat(bb);
 	}
-	
+
 	//polymorphism interaksi
 	void Python::interact() {
 		cout << "Ssshhh\n";
+	}
+
+	char Phyton::Render(){
+		return 'V';
 	}

@@ -13,3 +13,7 @@ using namespace std;
 	void BigHornSheep::interact(){
 		cout<< "Mbeeekkkk" << endl;
 	}
+
+	char BigHornSheep::Render(){
+		return 'S';
+	}

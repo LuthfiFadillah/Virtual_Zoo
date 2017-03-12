@@ -5,14 +5,14 @@
 #include "Indices.h"
 
 class Gorilla:public Primates{
-//method	
+//method
 public:
 	//ctor with param
 	Gorilla(int bb,int x, int y);
 	//destructor
 	//polymorphism interaksi
 	void interact();
-	
-	
+
+	char Render();	
 };
 #endif

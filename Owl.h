@@ -9,9 +9,9 @@ class Owl:public Strigiformes{
 public:
 	//ctor with param
 	Owl(int bb, int x, int y);
-	
+
 	//polymorphism interaksi
 	void interact();
-
+	char Render();
 };
 #endif

@@ -9,8 +9,12 @@ using namespace std;
 	Orca::Orca(int bb, int x, int y): Cetacea(false, x,y) {
 		set_berat(bb);
 	}
-	
+
 	//polymorphism interaksi
 	void Orca::interact(){
 		cout << "*WWUSHHH*" << endl;
+		}
+
+		char Orca::Render(){
+			return 'R';
 		}

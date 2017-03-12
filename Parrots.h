@@ -8,9 +8,9 @@ class Parrots:public Psittaciformes{
 public:
 	//ctor with param
 	Parrots(int bb, int x, int y);
-	
+
 	//polymorphism interaksi
 	void interact();
-	
+	char Render();	
 };
 #endif

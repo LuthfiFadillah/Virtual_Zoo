@@ -13,3 +13,7 @@ using namespace std;
 	void Giraffe::interact(){
 		cout<< "where are u? i cant see you! are you down there?? please come up!" << endl;
 	}
+
+	char Giraffe::Render(){
+		return 'G';
+	}

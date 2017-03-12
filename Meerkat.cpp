@@ -17,3 +17,7 @@ using namespace std;
 	void Meerkat::interact() {
 		cout << "*suddenly standing*" << endl;
 }
+
+char Meerkat::Render(){
+	return 'M';
+}

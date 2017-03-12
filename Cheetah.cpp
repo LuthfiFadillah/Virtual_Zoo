@@ -17,3 +17,7 @@ using namespace std;
 	void Cheetah::interact() {
 		cout << "*run fast*" << endl;
 }
+
+char Cheetah::Render(){
+	return 'T';
+}
