@@ -2,11 +2,11 @@
 #define LANDHABITAT_H
 #include "Cell.h"
 #include "Habitat.h"
+#include "Indices.h"
 
 class LandHabitat:public Habitat{
 public:
-
-protected:
-
+  LandHabitat(Indices I);
+  void Render();
 };
 #endif

@@ -2,11 +2,11 @@
 #define AIRHABITAT_H
 #include "Cell.h"
 #include "Habitat.h"
+#include "Indices.h"
 
 class AirHabitat:public Habitat{
 public:
-
-protected:
-
+  AirHabitat(Indices I);
+  void Render();
 };
 #endif

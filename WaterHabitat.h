@@ -2,11 +2,11 @@
 #define WATERHABITAT_H
 #include "Cell.h"
 #include "Habitat.h"
+#include "Indices.h"
 
 class WaterHabitat:public Habitat{
 public:
-
-protected:
-
+  WaterHabitat(Indices I);
+  void Render();
 };
 #endif
