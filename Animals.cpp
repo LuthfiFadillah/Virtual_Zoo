@@ -4,13 +4,9 @@
 using namespace std;
 
 //ctor
-Animals::Animals(int makan, bool land, bool water, bool air, bool kejinakan, int x, int y): makanan(makan), land_animal(land), water_animal(water), air_animal(air), jinak(kejinakan) {
-	cout << "\nctor animal " << endl;
+Animals::Animals(int makan, bool land, bool water, bool air, bool kejinakan, int x, int y): Renderable(1), makanan(makan), land_animal(land), water_animal(water), air_animal(air), jinak(kejinakan) {
 	Indices I(2,3);
 	koordinat = I;
-	cout << I.get_absis() << "---" << I.get_ordinat() << endl;
-	cout << koordinat.get_absis() << " " << koordinat.get_ordinat() << endl;
-	cout << "selesai ctor" << endl;
 }
 
 //dtor
@@ -52,3 +48,21 @@ bool Animals::IsAirAnimal() {
 bool Animals::IsJinak() {
 	return jinak;
 }
+
+bool Animals::IsLivable(Cell C) {
+	if (IsLandAnimal()) {
+		cout << "land ";
+		cout << C.GetCode() << endl;;
+	}
+	if (IsWaterAnimal()) {
+		cout << "water ";
+		cout << C.GetCode() << endl;
+	}
+	if (IsAirAnimal()) {
+		cout << "air ";
+		cout << C.GetCode() << endl;
+	}
+	return (
+		( ((C.GetCode() == 'l') && IsLandAnimal()) || ((C.GetCode() == 'w') && IsWaterAnimal()) || ((C.GetCode() == 'a') && IsAirAnimal()) )
+		);
+};

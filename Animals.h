@@ -2,6 +2,9 @@
 #ifndef ANIMALS_H
 #define ANIMALS_H
 #include "Renderable.h"
+#include "LandHabitat.h"
+#include "WaterHabitat.h"
+#include "AirHabitat.h"
 #include "Indices.h"
 class Animals: public Renderable {
 //method
@@ -37,6 +40,9 @@ public:
 	
 	//kejinakan
 	bool IsJinak();
+	
+	//Livable
+	bool IsLivable(Cell C);
 
 
 //atribut
