@@ -26,4 +26,4 @@ v2.2 (03/03/2017)
 - upload Animals.cpp, Animals.h, Casuariformes.cpp, Casuariformes.h, Cassowary.cpp, dan Cassowary.h 2 versi ctor: parameter int, int (pada branch master) dan parameter Indices (pada branch WithIndices) (by: Alivia, Suzane)
 
 v3.1 (11/03/2017)
-- upload Cell.h, Cell.cpp, Facility.h, Facility.cpp, Renderable,h, Road.h, Road.cpp (by: Suzane)
+- upload Cell.h, Cell.cpp, Facility.h, Facility.cpp, Renderable,h, Road.h, Road.cpp, Park.h, Park.cpp, Restaurant.h, Restaurant.cpp (by: Suzane)
