@@ -4,6 +4,6 @@
 #include "Indices.h"
 
 Habitat::Habitat(Indices I, int type) : Cell(I, 0), HType(type) {}
-bool IsLand(){ return HType == 0;}
-bool IsWater(){ return HType == 1;}
-bool IsAir(){ return HType == 2;}
+bool Habitat::IsLand(){ return HType == 0;}
+bool Habitat::IsWater(){ return HType == 1;}
+bool Habitat::IsAir(){ return HType == 2;}

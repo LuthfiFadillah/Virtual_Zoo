@@ -1,26 +1,17 @@
-#include "Road.h"
-#include "Park.h"
-#include "Restaurant.h"
+//file mcage.cpp
+#include "Cage.h"
 #include "Indices.h"
-#include <iostream>
-using namespace std;
 
-int main () {
-	Indices I1(1,1);
-	Indices I2(1,2);
-	Indices I3(1,3);
-	Road Ro(I1);
-	Park P(I2);
-	Restaurant Re(I3);
-	cout << endl;
-	
-	if (Re.IsFacility()) {
-		cout << "Re is a facility, ";
+int main() {
+	Wil Indices[10];
+	k=0;
+	Indices I;
+	for (i=0; i<2; i++) {
+		for (j=0; j<5; j++) {	
+			I.set_absis(i+1); I.set_ordinat(j+1);
+			Wil[k] = I;
+		}
 	}
-	if (Re.IsRestaurant()) {
-		cout << "a restaurant to be precise.\n";
-	}
-	
-	Ro.Render(); P.Render(); Re.Render();
+	Cage C1(Wil, 10);
 	return 0;
 }

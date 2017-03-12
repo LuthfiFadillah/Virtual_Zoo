@@ -11,6 +11,6 @@ using namespace std;
 	//Road(Road& R);
 	Park::~Park() {}
 	//Road& operator= (Road& R);
-	void Park::Render() {
-		cout << "P";
+	char Park::Render() {
+		return 'P';
 	}

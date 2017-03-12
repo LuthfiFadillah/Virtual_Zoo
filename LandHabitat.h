@@ -7,6 +7,6 @@
 class LandHabitat:public Habitat{
 public:
   LandHabitat(Indices I);
-  void Render();
+  char Render();
 };
 #endif

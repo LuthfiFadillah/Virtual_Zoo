@@ -11,6 +11,6 @@ using namespace std;
 	//Road(Road& R);
 	Restaurant::~Restaurant() {}
 	//Road& operator= (Road& R);
-	void Restaurant::Render() {
-		cout << "R";
+	char Restaurant::Render() {
+		return 'R';
 	}

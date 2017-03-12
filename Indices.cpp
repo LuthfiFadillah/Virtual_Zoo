@@ -47,6 +47,10 @@ using namespace std;
 	void Indices::set_ordinat(int ordinat) {
 		y = ordinat;
 	}
+	
+	bool Indices::IsEqual(const Indices& I){
+		return ((I.x == x) && (I.y == y));
+	}
 	//cout
 	/*
 	std::ostream& operator<<(std::ostream &os, Indices& I) {

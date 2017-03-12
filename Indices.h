@@ -21,6 +21,9 @@ public:
 	//setter
 	void set_absis(int x);
 	void set_ordinat(int y);
+	
+	bool IsEqual(const Indices& I);
+
 	//cout
 	//friend std::ostream& operator<<(std::ostream &os, Indices& I);
 //atribut

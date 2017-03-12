@@ -6,6 +6,6 @@
 using namespace std;
 
 WaterHabitat::WaterHabitat(Indices I) : Habitat(I,1){}
-void WaterHabitat::Render(){
-  cout << "w";
+char WaterHabitat::Render(){
+  return 'w';
 }

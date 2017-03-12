@@ -6,6 +6,6 @@
 using namespace std;
 
 LandHabitat::LandHabitat(Indices I) : Habitat(I,0){}
-void LandHabitat::Render(){
-  cout << "l";
+char LandHabitat::Render(){
+  return 'l';
 }

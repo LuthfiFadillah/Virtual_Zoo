@@ -12,7 +12,7 @@ public:
 	//Road(Road& R);
 	~Park();
 	//Road& operator= (Road& R);
-	void Render();
+	char Render();
 };
 
 #endif

@@ -11,6 +11,6 @@ using namespace std;
 	//Road::Road(Road& R): Facility(R.GetKoordinat()) {}
 	Road::~Road() {}
 	//Road& Road::operator= (Road& R) {}
-	void Road::Render() {
-		cout << "-";
+	char Road::Render() {
+		return '-';
 	}

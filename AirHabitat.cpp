@@ -2,10 +2,10 @@
 #include "Habitat.h"
 #include "AirHabitat.h"
 #include "Indices.h"
-#include <iostream>a
+#include <iostream>
 using namespace std;
 
-AirHabitat(Indices I) : Habitat(I,2){}
-void Render(){
-  cout << "a";
+AirHabitat::AirHabitat(Indices I) : Habitat(I,2){}
+char AirHabitat::Render(){
+  return 'a';
 }

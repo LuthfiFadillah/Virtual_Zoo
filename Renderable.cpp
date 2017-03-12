@@ -1,4 +1,4 @@
 //file Renderable.h
 #include "Renderable.h"
 
-	void Render() = 0;
+	char Render() = 0;

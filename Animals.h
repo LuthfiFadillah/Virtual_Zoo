@@ -1,8 +1,9 @@
 //Animals.h
 #ifndef ANIMALS_H
 #define ANIMALS_H
+#include "Renderable.h"
 #include "Indices.h"
-class Animals{
+class Animals: public Renderable {
 //method
 public:
 	//ctor
@@ -42,7 +43,7 @@ public:
 protected:
 	int berat_badan;
 	Indices koordinat;
-	int makanan;
+	const int makanan;
 	const bool land_animal;
 	const bool water_animal;
 	const bool air_animal;

@@ -1,3 +1,4 @@
+
 #ifndef AIRHABITAT_H
 #define AIRHABITAT_H
 #include "Cell.h"
@@ -7,6 +8,6 @@
 class AirHabitat:public Habitat{
 public:
   AirHabitat(Indices I);
-  void Render();
+  char Render();
 };
 #endif
