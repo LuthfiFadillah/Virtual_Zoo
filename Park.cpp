@@ -7,7 +7,7 @@
 using namespace std;
 
 	//Road();
-	Park::Park(Indices I): Facility(I, 1) {}
+	Park::Park(Indices I): Facility(I, 1, 'p') {}
 	//Road(Road& R);
 	Park::~Park() {}
 	//Road& operator= (Road& R);

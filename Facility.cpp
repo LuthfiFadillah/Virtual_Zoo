@@ -4,7 +4,7 @@
 #include "Indices.h"
 
 	//Facility::Facility(): Cell() {}
-	Facility::Facility(Indices I, int type): Cell(I, 1), FType(type) {}
+	Facility::Facility(Indices I, int type, char code): Cell(I, 1, code), FType(type) {}
 	//Facility::Facility(Facility& C): Cell(C.GetKoordinat()) {}
 	Facility::~Facility() {}
 	//Facility& Facility::operator= (Facility& F) {}

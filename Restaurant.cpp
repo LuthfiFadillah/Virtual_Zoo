@@ -7,7 +7,7 @@
 using namespace std;
 
 	//Road();
-	Restaurant::Restaurant(Indices I): Facility(I, 2) {}
+	Restaurant::Restaurant(Indices I): Facility(I, 2, 'r') {}
 	//Road(Road& R);
 	Restaurant::~Restaurant() {}
 	//Road& operator= (Road& R);

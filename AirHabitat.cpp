@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-AirHabitat::AirHabitat(Indices I) : Habitat(I,2){}
+AirHabitat::AirHabitat(Indices I) : Habitat(I,2,'a'){}
 char AirHabitat::Render(){
   return 'a';
 }

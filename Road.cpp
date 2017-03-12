@@ -7,9 +7,9 @@
 using namespace std;
 
 	//Road::Road(): Facility() {}
-	Road::Road(Indices I): Facility(I, 0) {}
+	Road::Road(Indices I): Facility(I, 0, 's') {}
 	//Road::Road(Road& R): Facility(R.GetKoordinat()) {}
-	Road::~Road() {}
+	Road::~Road() { cout << "ROADNYA KDTORRRR T_T" << endl; }
 	//Road& Road::operator= (Road& R) {}
 	char Road::Render() {
 		return '-';

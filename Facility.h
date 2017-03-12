@@ -7,7 +7,7 @@
 
 class Facility: public Cell {
 public:
-	Facility(Indices I, int type);
+	Facility(Indices I, int type, char code);
 	//Facility(Facility& C);
 	~Facility();
 	//Facility& operator= (Facility& F);

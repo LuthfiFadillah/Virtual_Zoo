@@ -5,7 +5,12 @@
 #include <iostream>
 using namespace std;
 
-WaterHabitat::WaterHabitat(Indices I) : Habitat(I,1){}
+WaterHabitat::WaterHabitat(Indices I) : Habitat(I,1,'w'){}
+
+WaterHabitat::~WaterHabitat() {
+	cout << "WATERHABITATNYA KEDTORRRR T_T" << endl;
+}
+
 char WaterHabitat::Render(){
   return 'w';
 }

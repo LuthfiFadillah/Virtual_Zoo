@@ -7,7 +7,7 @@
 
 class Habitat:public Cell{
 public:
-  Habitat(Indices I, int type);
+  Habitat(Indices I, int type, char code);
 	bool IsLand();
 	bool IsWater();
 	bool IsAir();

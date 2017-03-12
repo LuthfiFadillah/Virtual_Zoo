@@ -7,6 +7,7 @@
 class WaterHabitat:public Habitat{
 public:
   WaterHabitat(Indices I);
+  ~WaterHabitat();
   char Render();
 };
 #endif

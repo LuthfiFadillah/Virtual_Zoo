@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-LandHabitat::LandHabitat(Indices I) : Habitat(I,0){}
+LandHabitat::LandHabitat(Indices I) : Habitat(I,0,'l'){}
 char LandHabitat::Render(){
   return 'l';
 }
