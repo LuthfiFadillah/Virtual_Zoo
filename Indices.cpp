@@ -20,15 +20,14 @@ using namespace std;
 	}
 	//dtor
 	Indices::~Indices() {
+		cout << "tes";
 		x = 0; y = 0;
+		cout << "tes lagi\n";
 	}
 	//operator = 
 	Indices& Indices::operator= (Indices& I) {
-		cout <<  I.get_absis() << " dan " << I.get_ordinat() << endl;
 		Indices::x = I.x;
 		Indices::y = I.y;
-		cout << "jadi" << endl;
-		cout << this->x << " dan " << this->y << endl;
 		return *this;
 	}
 	//getter

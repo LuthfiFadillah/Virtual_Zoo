@@ -3,12 +3,12 @@
 using namespace std;
 
 int main() {
-	try {
+	/*try {
 		Zoo Z;
 	}
 	catch (const std::bad_alloc&) {
 		return -1;
-	}
-	//Zoo Z;
+	}*/
+	Zoo Z;
 	return 0;
 }

@@ -90,45 +90,58 @@ using namespace std;
 				int j=0;
 				int k=0;
 				while (j<samping*2) {
+					cout << "\n";
 					I.set_absis(k);
-					I.set_ordinat(j);
+					I.set_ordinat(i);
 					habitat = brs[j];
-					if (habitat = 'W') {
+					if (habitat == 'W') {
 						Map[i][k] = new WaterHabitat(I); 
+						cout << "Dtor Indices? ";
 					} else
-					if (habitat = 'L') {
+					if (habitat == 'L') {
 						Map[i][k] = new LandHabitat(I); 
+						cout << "Dtor Indices? ";
 					} else
-					if (habitat = 'A') {
+					if (habitat == 'A') {
 						Map[i][k] = new AirHabitat(I); 
+						cout << "Dtor Indices? ";
 					} else
-					if (habitat = '-') {
+					if (habitat == '-') {
 						Map[i][k] = new Road(I); 
+						cout << "Dtor Indices? ";
 					} else
-					if (habitat = '+') {
+					if (habitat == '+') {
 						Map[i][k] = new Road(I); 
+						cout << "Dtor Indices? ";
 					} else
-					if (habitat = '=') {
-						Map[i][k] = new Road(I); 
+					if (habitat == '=') {
+						Map[i][k] = new Road(I);
+						cout << "Dtor Indices? ";
 					} else
-					if (habitat = 'P') {
-						Map[i][k] = new Park(I); 
+					if (habitat == 'P') {
+						Map[i][k] = new Park(I);
+						cout << "Dtor Indices? ";
 					} else
-					if (habitat = 'R') {
+					if (habitat == 'R') {
 						Map[i][k] = new Restaurant(I); 
+						cout << "Dtor Indices? ";
+					} else{
+						
 					}
 					j++;
 					k++;
+					cout << "Yak kedtor\n;
 				
 					code = ((int) brs[j] -48);
 					if (code != 0) {
 						Temp[code-1][NeffKandang[code-1]] = I;
-						NeffKandang[i]++;
+						NeffKandang[code-1]++;
 					}
 				
 					j++;
 				}
 			}
+			filezoo.close();
 			DaftarKandang = new Cage[BykKandang];
 			Indices *TempI;
 			TempI =  new Indices [25];
@@ -154,11 +167,20 @@ using namespace std;
 				cout << endl;
 			}
 		}
-		filezoo.close();
+		cout << "\nDone\n";
 	}
 	
 	Zoo::~Zoo() {
+		cout << "\nmap\n";
+		for (int i=0; i<Lebar; i++) {
+			delete [] Map[i];
+		}
 		delete [] Map;
+		cout << "\ndaftar kandang\n";
 		delete [] DaftarKandang;
+		cout << "\nreadytoprint\n";
+		for (int i=0; i<Lebar; i++) {
+			delete [] ReadyToPrint[i];
+		}
 		delete [] ReadyToPrint;
 	}

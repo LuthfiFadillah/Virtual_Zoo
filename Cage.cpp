@@ -21,8 +21,11 @@ using namespace std;
 	}
 	
 	Cage::~Cage(){
+		cout << "cage1";
 		delete [] Wilayah;
+		cout << "cage2\n";
 		delete [] DataAnimals;
+		cout << "cage3";
 		Luas =0;
 	}
 	
