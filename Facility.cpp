@@ -3,12 +3,12 @@
 #include "Facility.h"
 #include "Indices.h"
 
-	Facility::Facility(): Cell() {}
-	Facility::Facility(Indices I): Cell(I) {}
-	Facility::Facility(Facility& C): Cell(C.GetKoordinat()) {}
+	//Facility::Facility(): Cell() {}
+	Facility::Facility(Indices I, int type): Cell(I, 1), FType(type) {}
+	//Facility::Facility(Facility& C): Cell(C.GetKoordinat()) {}
 	Facility::~Facility() {}
-	Facility& Facility::operator= (Facility& F) {}
+	//Facility& Facility::operator= (Facility& F) {}
 	//void GetKoordinat();
-	bool Facility::IsRoad() { return FType == 1; }
-	bool Facility::IsPark() { return FType == 2; }
-	bool Facility::IsRestaurant() { return FType == 3; }
+	bool Facility::IsRoad() { return (FType == 0); }
+	bool Facility::IsPark() { return (FType == 1); }
+	bool Facility::IsRestaurant() { return (FType == 2); }

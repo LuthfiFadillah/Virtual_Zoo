@@ -7,12 +7,12 @@
 
 class Road: public Facility {
 public:
-	Road();
+	//Road();
 	Road(Indices I);
-	Road(Road& R);
+	//Road(Road& R);
 	~Road();
-	Road& operator= (Road& R);
-	void render();
+	//Road& operator= (Road& R);
+	void Render();
 };
 
 #endif

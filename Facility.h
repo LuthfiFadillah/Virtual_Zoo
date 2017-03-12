@@ -2,22 +2,22 @@
 #ifndef FACILITY_H
 #define FACILITY_H
 #include "Cell.h"
+#include "Renderable.h"
 #include "Indices.h"
 
 class Facility: public Cell {
 public:
-	Facility();
-	Facility(Indices I);
-	Facility(Facility& C);
+	Facility(Indices I, int type);
+	//Facility(Facility& C);
 	~Facility();
-	Facility& operator= (Facility& F);
+	//Facility& operator= (Facility& F);
 	//void GetKoordinat();
 	bool IsRoad();
 	bool IsPark();
 	bool IsRestaurant();
-	virtual void render(); //iya???
+	//virtual void render() = 0; //iya???
 protected:
-	int FType; //0 = Road, 1 = Park, 2 = Restaurant
+	const int FType; //0 = Road, 1 = Park, 2 = Restaurant
 };
 
 #endif
