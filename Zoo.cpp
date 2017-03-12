@@ -6,6 +6,7 @@
 #include "WaterHabitat.h"
 #include "LandHabitat.h"
 #include "AirHabitat.h"
+#include "Beluga.h"
 #include "Cassowary.h"
 #include "Indices.h"
 #include <cstdio>
@@ -18,7 +19,7 @@ using namespace std;
 		
 		cout << "a";
 		ifstream filezoo;
-		filezoo.open("map.txt", ios::in);
+		filezoo.open("/Users/aliviaprht/Desktop/Virtual_Zoo/Virtual_Zoo/map.txt", ios::in);
 		//FILE *fp;
 		string brs;
 		int bwh=0;
@@ -130,7 +131,7 @@ using namespace std;
 					}
 					j++;
 					k++;
-					cout << "Yak kedtor\n;
+					cout << "Yak kedtor\n";
 				
 					code = ((int) brs[j] -48);
 					if (code != 0) {
@@ -144,17 +145,21 @@ using namespace std;
 			filezoo.close();
 			DaftarKandang = new Cage[BykKandang];
 			Indices *TempI;
-			TempI =  new Indices [25];
+            //TempI =  new Indices [25];
 			for (i=0; i<BykKandang; i++) {
+                TempI =  new Indices [25];
 				for (int j=0; j<NeffKandang[i]; j++) {
 					TempI[j] = Temp[i][j];
 				}
 				Cage C(TempI,NeffKandang[i]);
 				DaftarKandang[i] = C;
+                delete [] TempI;
 			}
 			ReadyToPrint = new char* [Lebar];
+            ToBePrinted = new char *[Lebar];
 			for (i=0; i<Lebar; i++) {
 				ReadyToPrint[i] = new char [Panjang];
+                ToBePrinted[i] = new char [Panjang];
 			}
 		
 			cout << "Coy\n";
@@ -162,12 +167,17 @@ using namespace std;
 			for (i=0; i<Lebar; i++) {
 				for (int j=0; j<Panjang; j++) {
 					ReadyToPrint[i][j] = Map[i][j]->Render();
-					cout << ReadyToPrint[i][j];
+                    ToBePrinted[i][j] = ReadyToPrint[i][j];
 				}
 				cout << endl;
 			}
 		}
 		cout << "\nDone\n";
+        
+        Animals *A1;
+        A1 = new Beluga(45,1,1);
+        DaftarKandang[0].AddAnimal(A1);
+        ReadyToPrint[1][1]= A1->Render();
 	}
 	
 	Zoo::~Zoo() {
@@ -177,10 +187,77 @@ using namespace std;
 		}
 		delete [] Map;
 		cout << "\ndaftar kandang\n";
-		delete [] DaftarKandang;
+		//delete [] DaftarKandang;
 		cout << "\nreadytoprint\n";
 		for (int i=0; i<Lebar; i++) {
 			delete [] ReadyToPrint[i];
 		}
 		delete [] ReadyToPrint;
 	}
+
+void Zoo::Move(){
+    bool move;
+    int count,x,y,to,tox,toy;
+    for (int i=0; i<BykKandang; i++) {
+        for (int j=0; j<DaftarKandang[i].GetBanyakHewan(); i++) {
+            move= false;
+            count = 0;
+            x = (DaftarKandang[i].GetAnimals()[j])->get_koordinat().get_absis();
+            y = (DaftarKandang[i].GetAnimals()[j])->get_koordinat().get_ordinat();
+            to = (rand() % 3) +1;
+            while ((!(move)) && (count<4)){
+                tox = x; toy = y;
+                count++;
+                switch (to)
+                {
+                    case 1 : {tox++;}; break;
+                    case 2 : {toy++;}; break;
+                    case 3 : {tox--;}; break;
+                    case 4 : {toy--;}; break;
+                    
+                }
+                if ((DaftarKandang[i].GetAnimals()[j])->IsLivable(*Map[toy][tox])) {
+                    move = true;
+                    (DaftarKandang[i].GetAnimals()[j])->set_koordinat(tox, toy);
+                    ReadyToPrint[y][x] = ToBePrinted[y][x];
+                    ReadyToPrint[toy][tox] = (DaftarKandang[i].GetAnimals()[j])->Render();
+                } else {
+                    to = (to%4) + 1;
+                }
+            }
+            /*
+            cout << "a" << endl;
+            if ((DaftarKandang[i].GetAnimals()[j])->IsLivable(*Map[y+1][x])) {
+                cout << "kanan";
+                (DaftarKandang[i].GetAnimals()[j])->set_koordinat(y+1, x);
+                ReadyToPrint[x][y] = ToBePrinted[x][y];
+                ReadyToPrint[x][y+1] = (DaftarKandang[i].GetAnimals()[j])->Render();
+            } else
+                if ((DaftarKandang[i].GetAnimals()[j])->IsLivable(*Map[y-1][x])) {
+                    cout << "kiri" << endl;
+                    (DaftarKandang[i].GetAnimals()[j])->set_koordinat(y-1, x);
+                    ReadyToPrint[x][y] = ToBePrinted[x][y];
+                    ReadyToPrint[x][y-1] = (DaftarKandang[i].GetAnimals()[j])->Render();
+                } else
+                    if ((DaftarKandang[i].GetAnimals()[j])->IsLivable(*Map[y][x-1])) {
+                        (DaftarKandang[i].GetAnimals()[j])->set_koordinat(y, x-1);
+                        ReadyToPrint[x][y] = ToBePrinted[x][y];
+                        ReadyToPrint[x-1][y] = (DaftarKandang[i].GetAnimals()[j])->Render();
+                    } else
+                        if ((DaftarKandang[i].GetAnimals()[j])->IsLivable(*Map[y][x+1])) {
+                            (DaftarKandang[i].GetAnimals()[j])->set_koordinat(y, x+1);
+                            ReadyToPrint[x][y] = ToBePrinted[x][y];
+                            ReadyToPrint[x+1][y] = (DaftarKandang[i].GetAnimals()[j])->Render();
+                        }*/
+        
+        }
+    }
+}
+void Zoo::Print(){
+    for(int i=0; i<Lebar; i++) {
+        for(int j=0; j<Panjang; j++) {
+            cout<<ReadyToPrint[i][j] << " ";
+        }
+        cout<< endl;
+    }
+}
