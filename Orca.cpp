@@ -16,5 +16,5 @@ using namespace std;
 		}
 
 		char Orca::Render(){
-			return 'R';
+			return '$';
 		}
