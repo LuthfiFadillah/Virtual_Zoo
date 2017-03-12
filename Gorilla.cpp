@@ -1,11 +1,12 @@
 #include "Gorilla.h"
 #include "Primates.h"
 #include "Animals.h"
+#include "Indices.h"
 #include <iostream>
 using namespace std;	
 
 	//ctor with param
-	Gorilla::Gorilla(int bb){
+	Gorilla::Gorilla(int bb, int x, int y) : Primates(false,x,y){
 		set_berat(bb);
 	}
 	//destructor

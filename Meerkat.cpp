@@ -1,6 +1,7 @@
 #include "Meerkat.h"
 #include "Carnivora.h"
 #include "Animals.h"
+#include "Indices.h"
 #include <iostream>
 using namespace std;
 
@@ -8,7 +9,7 @@ using namespace std;
 //method
 
 	//ctor with param
-	Meerkat::Meerkat(int bb) {
+	Meerkat::Meerkat(int bb, int x, int y) : Carnivora(false,x,y) {
 		set_berat(bb);
 	}
 	//destructor

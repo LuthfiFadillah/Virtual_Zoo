@@ -5,7 +5,7 @@
 using namespace std;
 
 	//ctor with param
-	Cockatoo::Cockatoo(int bb): Psittaciformes() {
+	Cockatoo::Cockatoo(int bb,int x, int y): Psittaciformes(true,x,y) {
 		set_berat(bb);
 	}
 	
