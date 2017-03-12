@@ -14,3 +14,7 @@ using namespace std;
 	void Beluga::interact(){
 		cout << "Ooooooooooooo..." << endl;
 		}
+
+	char Beluga::Render(){
+		return 'B';
+	}
