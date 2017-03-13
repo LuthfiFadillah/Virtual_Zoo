@@ -2,11 +2,11 @@
 Tugas OOP
 
 SUMBER:
-https://a-z-animals.com/reference/animal-classification/
-http://www.reptileknowledge.com/reptiles.php
-http://www.newworldencyclopedia.org/entry/Chondrichthyes
-http://www.biozoomer.com/2012/04/aves-classification.html
-http://www.enchantedlearning.com/subjects/mammals/classification/
+- https://a-z-animals.com/reference/animal-classification/
+- http://www.reptileknowledge.com/reptiles.php
+- http://www.newworldencyclopedia.org/entry/Chondrichthyes
+- http://www.biozoomer.com/2012/04/aves-classification.html
+- http://www.enchantedlearning.com/subjects/mammals/classification/
 
 v1.0 (24/02/2017)
 - Membuat Repository di Github
