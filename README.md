@@ -34,3 +34,12 @@ v2.2 (03/03/2017)
 
 v3.1 (11/03/2017)
 - upload Cell.h, Cell.cpp, Facility.h, Facility.cpp, Renderable,h, Road.h, Road.cpp, Park.h, Park.cpp, Restaurant.h, Restaurant.cpp (by: Suzane)
+
+v3.2 (14/03/2017)
+- upload zoo1.zip
+- penamaan
+- nama file
+- nama type
+- penamaan fungsi
+- penamaan variabel
+
