@@ -15,6 +15,6 @@ using namespace std;
 		cout << "*Big grins* heyyo" << endl;
 	}
 
-	char GreatWhiteShark::Render(){
+	char GreatWhiteShark::Render() {
 		return 'K';
 	}

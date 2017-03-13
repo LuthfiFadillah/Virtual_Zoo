@@ -6,14 +6,14 @@
 using namespace std;
 
 	//ctor with param
-	Giraffe::Giraffe(int bb): Artiodactyls(false,x,y){
+	Giraffe::Giraffe(int bb, int x, int y): Artiodactyls(true,x,y){
 		set_berat(bb);
 	}
 
 	void Giraffe::interact(){
 		cout<< "where are u? i cant see you! are you down there?? please come up!" << endl;
 	}
-
-	char Giraffe::Render(){
+	
+	char Giraffe::Render() {
 		return 'G';
 	}

@@ -1,5 +1,5 @@
 #include "Cetacea.h"
-#include "Animal.h"
+#include "Animals.h"
 #include "Beluga.h"
 #include "Indices.h"
 #include <iostream>
@@ -14,7 +14,6 @@ using namespace std;
 	void Beluga::interact(){
 		cout << "Ooooooooooooo..." << endl;
 		}
-
-	char Beluga::Render(){
-		return 'B';
-	}
+char Beluga::Render() {
+ return 'B';
+}

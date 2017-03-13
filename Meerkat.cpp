@@ -9,15 +9,14 @@ using namespace std;
 //method
 
 	//ctor with param
-	Meerkat::Meerkat(int bb, int x, int y) : Carnivora(false,x,y) {
+	Meerkat::Meerkat(int bb, int x, int y) : Carnivora(true,x,y) {
 		set_berat(bb);
 	}
 	//destructor
 	//polymorphism interaksi
 	void Meerkat::interact() {
 		cout << "*suddenly standing*" << endl;
-}
-
-char Meerkat::Render(){
-	return 'M';
-}
+	}
+	char Meerkat::Render() {
+		return 'M';
+	}

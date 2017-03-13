@@ -16,8 +16,7 @@ using namespace std;
 	//polymorphism interaksi
 	void Lion::interact() {
 		cout << "ROAR" << endl;
-}
-
-char Lion::Render(){
-	return 'I';
-}
+	}
+	char Lion::Render() {
+		return 'I';
+	}

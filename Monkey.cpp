@@ -3,10 +3,10 @@
 #include "Indices.h"
 #include "Animals.h"
 #include <iostream>
-using namespace std;
+using namespace std;	
 
 	//ctor with param
-	Monkey::Monkey(int bb,int x, int y) : Primates(false,x,y){
+	Monkey::Monkey(int bb,int x, int y) : Primates(true,x,y){
 		set_berat(bb);
 	}
 	//destructor
@@ -14,7 +14,6 @@ using namespace std;
 	void Monkey::interact(){
 		cout<<"uuuk aaak aaak"<<endl;
 	}
-
-	char Monkey::Render(){
+	char Monkey::Render() {
 		return 'Y';
 	}

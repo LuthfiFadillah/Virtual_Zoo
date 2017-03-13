@@ -5,6 +5,7 @@
 #include "LandHabitat.h"
 #include "WaterHabitat.h"
 #include "AirHabitat.h"
+#include "Cell.h"
 #include "Indices.h"
 class Animals: public Renderable {
 //method
@@ -14,6 +15,8 @@ public:
 	
 	//dtor
 	~Animals();
+    
+  //  Animals& operator= (const Animals& A);
 	
 	//interaksi yang dilakukan animals
 	virtual void interact() = 0;
@@ -40,9 +43,9 @@ public:
 	
 	//kejinakan
 	bool IsJinak();
-	
-	//Livable
-	bool IsLivable(Cell C);
+    
+    bool IsLivable(Cell C);
+    
 
 
 //atribut

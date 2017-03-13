@@ -5,13 +5,13 @@
 #include "Indices.h"
 
 class Lemur: public Primates{
-//method
+//method	
 public:
 	//ctor with param
 	Lemur(int bb,int x,int y);
 	//destructor
 	//polymorphism interaksi
 	void interact();
-	char Render();	
+	char Render();
 };
 #endif

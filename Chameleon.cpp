@@ -16,6 +16,6 @@ using namespace std;
 		cout << "Smisshy slimi skinny\n";
 	}
 
-	char Chameleon::Render(){
+	char Chameleon::Render() {
 		return 'H';
 	}

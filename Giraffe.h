@@ -9,7 +9,6 @@ class Giraffe:public Artiodactyls{
 public:
 	//ctor with param
 	Giraffe(int bb,int x, int y);
-
 	void interact();
 	char Render();
 };

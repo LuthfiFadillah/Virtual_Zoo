@@ -5,14 +5,13 @@
 #include "Indices.h"
 
 class Tarsier:public Primates{
-//method
+//method	
 public:
 	//ctor with param
 	Tarsier(int bb,int x, int y);
 	//destructor
 	//polymorphism interaksi
 	void interact();
-
 	char Render();
 };
 #endif

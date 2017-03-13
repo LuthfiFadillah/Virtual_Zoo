@@ -9,7 +9,7 @@ using namespace std;
 //method
 
 	//ctor with param
-	Cassowary::Cassowary(int bb, int x, int y): Casuariformes(false, x, y) {
+	Cassowary::Cassowary(int bb, int x, int y): Casuariformes(true, x, y) {
 		cout << "\nctor cassowary\n";
 		Cassowary::set_berat(bb);
 		//cout << I.get_absis() << "|" << I.get_ordinat() << endl;
@@ -22,6 +22,6 @@ using namespace std;
 		cout << "I can't fly :(" << endl;
 	}
 
-	char Cassowary::Render(){
+	char Cassowary::Render() {
 		return 'C';
 	}

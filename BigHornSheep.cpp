@@ -14,6 +14,6 @@ using namespace std;
 		cout<< "Mbeeekkkk" << endl;
 	}
 
-	char BigHornSheep::Render(){
+	char BigHornSheep::Render() {
 		return 'S';
 	}

@@ -16,8 +16,7 @@ using namespace std;
 	//polymorphism interaksi
 	void Cheetah::interact() {
 		cout << "*run fast*" << endl;
-}
-
-char Cheetah::Render(){
-	return 'T';
-}
+	}
+	char Cheetah::Render() {
+		return 'T';
+	}

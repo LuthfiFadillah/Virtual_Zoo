@@ -6,7 +6,7 @@
 using namespace std;
 
 	//ctor with param
-	Deer::Deer(int bb,int x, int y): Artiodactyls(false,x,y){
+	Deer::Deer(int bb,int x, int y): Artiodactyls(true,x,y){
 		set_berat(bb);
 	}
 
@@ -14,6 +14,6 @@ using namespace std;
 		cout<< "Do you know where is santa house??" << endl;
 	}
 
-	char Deer::Render(){
+	char Deer::Render() {
 		return 'D';
 	}

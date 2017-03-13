@@ -1,7 +1,7 @@
 #ifndef BELUGA_H
 #define BELUGA_H
 #include "Cetacea.h"
-#include "Animal.h"
+#include "Animals.h"
 #include "Indices.h"
 
 class Beluga:public Cetacea{
@@ -13,8 +13,8 @@ public:
 	
 	//polymorphism interaksi
 	void interact();
-	
-	char Render();
+    
+    char Render();
 
 };
 #endif

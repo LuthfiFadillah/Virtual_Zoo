@@ -1,5 +1,5 @@
 #include "Cetacea.h"
-#include "Animal.h"
+#include "Animals.h"
 #include "Dolphin.h"
 #include "Indices.h"
 #include <iostream>
@@ -9,12 +9,12 @@ using namespace std;
 	Dolphin::Dolphin(int bb,int x, int y): Cetacea(true,x,y) {
 		set_berat(bb);
 	}
-
+	
 	//polymorphism interaksi
 	void Dolphin::interact(){
 		cout << "Bermain bola? Makan dulu" << endl;
 		}
 
-		char Dolphin::Render(){
-			return 'N';
-		}
+	char Dolphin::Render() {
+		return 'N';
+	}

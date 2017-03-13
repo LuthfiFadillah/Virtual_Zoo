@@ -3,10 +3,10 @@
 #include "Animals.h"
 #include "Indices.h"
 #include <iostream>
-using namespace std;
+using namespace std;	
 
 	//ctor with param
-	Gorilla::Gorilla(int bb, int x, int y) : Primates(false,x,y){
+	Gorilla::Gorilla(int bb, int x, int y) : Primates(true,x,y){
 		set_berat(bb);
 	}
 	//destructor
@@ -15,6 +15,6 @@ using namespace std;
 		cout<<"*thump thump*"<<endl;
 	}
 
-	char Gorilla::Render(){
+	char Gorilla::Render() {
 		return 'J';
 	}
