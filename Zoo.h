@@ -13,8 +13,8 @@ public:
     void HitungMakanan();
     bool IsInteractable(Indices I, Cage C);
     Cage* GetKandang();
-		char** GetPrint();
-		void Tour();
+	char** GetPrint();
+	void Tour();
 
 private:
 	Cell* **map;

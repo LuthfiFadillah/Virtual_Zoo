@@ -31,7 +31,6 @@
 #include "Wolf.h"
 #include "Indices.h"
 #include <time.h>
-#include <stdlib.h>
 #include <cstdio>
 #include <string>
 #include <fstream>
@@ -113,13 +112,13 @@ using namespace std;
 						map[i][k] = new AirHabitat(I);
 					} else
 					if (habitat == '-') {
-						map[i][k] = new Road(I, 0);
+						map[i][k] = new Road(I,0);
 					} else
 					if (habitat == '+') {
-						map[i][k] = new Road(I, 1);
+						map[i][k] = new Road(I,1);
 					} else
 					if (habitat == '=') {
-						map[i][k] = new Road(I, 2);
+						map[i][k] = new Road(I,2);
 					} else
 					if (habitat == 'P') {
 						map[i][k] = new Park(I);
@@ -150,8 +149,13 @@ using namespace std;
 				for (int j=0; j<NeffKandang[i]; j++) {
 					TempI[j] = Temp[i][j];
 				}
+				cout << "a";
 				Cage C(TempI,NeffKandang[i]);
+				cout << "b";
+				cout << "b";
+				cout << "b";
 				daftar_kandang[i] = C;
+				cout << "c";
 				C.~Cage();
                 delete [] TempI;
 			}
@@ -169,6 +173,11 @@ using namespace std;
                     ready_to_print[i][j] = base_map[i][j];
 				}
 			}
+
+			for (i=0; i<BK; i++){
+				delete [] Temp[i];
+			}
+			delete [] Temp;
 
 			Animals** PA;
 			PA = new Animals* [37];
@@ -260,20 +269,16 @@ using namespace std;
 			PA[i] = new Python(100, 12, 19);
 			daftar_kandang[8].AddAnimal(PA[i]);
 			i++;
-			/*
-			PA[i] = new Lion(70, 0, 4);
-			i++;
-			daftar_kandang[2].AddAnimal(PA[3]);
-			PA[i] = new Giraffe(100, 1, 4);
-			daftar_kandang[2].AddAnimal(PA[4]);
 
-
-			for (i=0; i<banyak_kandang; i++) {
-				for (int j=0; j<daftar_kandang[i].GetBanyakHewan(); j++) {
-					ready_to_print[daftar_kandang[i].GetAnimals()[j]->GetKoordinat().GetOrdinat()][daftar_kandang[i].GetAnimals()[j]->GetKoordinat().GetAbsis()] = daftar_kandang[i].GetAnimals()[j]->Render();
+			int x;
+			int y;
+			for (int i = 0; i < banyak_kandang; i++) {
+				for (int j = 0; j < daftar_kandang[i].GetBanyakHewan(); j++) {
+					x = daftar_kandang[i].GetAnimals()[j]->GetKoordinat().GetAbsis();
+					y = daftar_kandang[i].GetAnimals()[j]->GetKoordinat().GetOrdinat();
+					ready_to_print[x][y] = daftar_kandang[i].GetAnimals()[j]->Render();
 				}
 			}
-             */
 		}
 	}
 
@@ -331,7 +336,7 @@ void Zoo::Move(){
         }
     }
 }
-void Zoo::Print(){
+void Zoo::Print() {
     for(int i=0; i<lebar; i++) {
         for(int j=0; j<panjang; j++) {
             cout<<ready_to_print[i][j] << " ";
@@ -406,9 +411,9 @@ void Zoo::Tour(){
 	char** map;
 	countentrance = 0;
 	countexit = 0;
-	map = new char*[20];
-	for(i=0;i<20;i++){
-		map[i] = new char[20];
+	map = new char*[lebar];
+	for(i=0;i<lebar;i++){
+		map[i] = new char[panjang];
 	}
 	//mindahin map di zoo ke temp map
 	for(i=0; i<lebar; i++) {
@@ -559,4 +564,14 @@ void Zoo::Tour(){
 		cout << "noonononono kejebak!!!" << endl;
 		cout << "Anda berakhir di " << x << "," << y << endl;
 	}
+	delete [] ent;
+	delete [] ex;
+	for(i=0;i<20;i++){
+		delete [] map[i];
+	}
+	delete [] map;
+	for(i=0;i<lebar;i++){
+		delete [] IsVisitable[i];
+	}
+	delete [] IsVisitable;
 }
