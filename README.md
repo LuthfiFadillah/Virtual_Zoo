@@ -41,7 +41,7 @@ v3.2 (14/03/2017)
 - nama file
 - nama type
 - penamaan fungsi
-- penamaan variabel
+- penamaan variable (by: Emil)
 
 v3.3 (14/03/2017)
 - upload zoo1.zip
@@ -50,4 +50,4 @@ v3.3 (14/03/2017)
 - nama type
 - penamaan fungsi
 - penamaan variabel
-- indentasi bu inge
+- indentasi bu inge (by: Emil)
