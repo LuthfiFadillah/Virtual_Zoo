@@ -8,11 +8,13 @@
 class Road: public Facility {
 public:
 	//Road();
-	Road(Indices I);
+	Road(Indices I, int rtype);
 	//Road(Road& R);
 	~Road();
 	//Road& operator= (Road& R);
 	char Render();
+private:
+	int rtype; // 0 : biasa, 1 : entrance, 2 : exit
 };
 
 #endif

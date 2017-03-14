@@ -8,14 +8,22 @@ class Zoo {
 public:
 	Zoo();
 	~Zoo();
+    void Move();
+    void Print();
+    void HitungMakanan();
+    bool IsInteractable(Indices I, Cage C);
+    Cage* GetKandang();
+		char** GetPrint();
+		void Tour();
 
 private:
-	Cell* **Map;
-	Cage *DaftarKandang;
-	int Lebar;
-	int Panjang;
-	int BykKandang;
-	char **ReadyToPrint;
+	Cell* **map;
+	Cage *daftar_kandang;
+	int lebar;
+	int panjang;
+	int banyak_kandang;
+    char **ready_to_print;
+	char **base_map;
 	int DEFSIZE=20;
 };
 

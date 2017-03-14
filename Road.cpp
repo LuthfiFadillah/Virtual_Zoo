@@ -7,10 +7,18 @@
 using namespace std;
 
 	//Road::Road(): Facility() {}
-	Road::Road(Indices I): Facility(I, 0, 's') {}
+	Road::Road(Indices I, int rtype): Facility(I, 0, 's'), rtype(rtype){}
 	//Road::Road(Road& R): Facility(R.GetKoordinat()) {}
-	Road::~Road() { cout << "ROADNYA KDTORRRR T_T" << endl; }
+	Road::~Road() {}
 	//Road& Road::operator= (Road& R) {}
 	char Road::Render() {
-		return '-';
+		if (rtype==0) {
+			return '-';
+		}
+		else if (rtype==1){
+			return '+';
+		}
+		else if (rtype==2){
+			return '=';
+		}
 	}
