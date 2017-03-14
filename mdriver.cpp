@@ -5,6 +5,6 @@ using namespace std;
 
 int main(){
   Driver main;
-  main.Main_Menu();
+  main.MainMenu();
   return 0;
 }

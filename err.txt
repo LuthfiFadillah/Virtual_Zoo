@@ -1,0 +1,5 @@
+[Zoo.cpp:278]: (error) Memory leak: Temp
+[Zoo.cpp:562]: (error) Memory leak: ent
+[Zoo.cpp:562]: (error) Memory leak: ex
+[Zoo.cpp:562]: (error) Memory leak: map
+[Zoo.cpp:562]: (error) Memory leak: IsVisitable

@@ -5,13 +5,13 @@
 class Driver{
   public:
     //Display main menu
-    void Main_Menu();
+    void MainMenu();
     //Display Virtual Zoo
-    void Display_Virtual_Zoo(int x1, int y1, int x2, int y2);
+    void DisplayVirtualZoo(int x1, int y1, int x2, int y2);
     //Tour
-    void Tour_Virtual_Zoo();
+    void TourVirtualZoo();
     //Display makanan yang dibutuhkan
-    void Display_Makanan();
+    void DisplayMakanan();
   private:
     Zoo Z;
 };
