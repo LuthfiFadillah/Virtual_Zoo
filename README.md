@@ -43,3 +43,11 @@ v3.2 (14/03/2017)
 - penamaan fungsi
 - penamaan variabel
 
+v3.3 (14/03/2017)
+- upload zoo1.zip
+- penamaan
+- nama file
+- nama type
+- penamaan fungsi
+- penamaan variabel
+- indentasi bu inge
