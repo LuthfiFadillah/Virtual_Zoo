@@ -17,7 +17,7 @@
   
 /** @brief prosedur virtual interact dari hewan
   * I.S hewan telah dihidupkan
-  * F.S Mencetak suara hewan kelayar
+  * F.S Mencetak interaksi hewan kelayar
   * Diimplementasikan pada masing22 class real tiap spesies hewan
   */
   
@@ -212,8 +212,8 @@
   
 /** @brief prosedur Interact dari objek Giraffe
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara giraffe ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi giraffe ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Giraffe
@@ -233,8 +233,8 @@
   
 /** @brief prosedur Interact dari objek Big Horn Sheep
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Big Horn Sheep ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Big Horn Sheep ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Big Horn Sheep
@@ -254,8 +254,8 @@
   
 /** @brief prosedur Interact dari objek Deer
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Deer ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Deer ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Deer
@@ -275,8 +275,8 @@
   
 /** @brief prosedur Interact dari objek Wolf
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Wolf ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Wolf ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Wolf
@@ -296,8 +296,8 @@
   
 /** @brief prosedur Interact dari objek Lion
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Lion ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Lion ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Lion
@@ -317,8 +317,8 @@
   
 /** @brief prosedur Interact dari objek Cheetah
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Cheetah ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Cheetah ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Cheetah
@@ -338,8 +338,8 @@
   
 /** @brief prosedur Interact dari objek Meerkat
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Meerkat ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Meerkat ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Meerkat
@@ -359,8 +359,8 @@
   
 /** @brief prosedur Interact dari objek Monkey
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Monkey ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Monkey ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Monkey
@@ -380,8 +380,8 @@
   
 /** @brief prosedur Interact dari objek Gorilla
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Gorilla ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Gorilla ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Gorilla
@@ -401,8 +401,8 @@
   
 /** @brief prosedur Interact dari objek Tarsiers
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Tarsiers ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Tarsiers ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Tarsiers
@@ -422,8 +422,8 @@
   
 /** @brief prosedur Interact dari objek Lemur
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Lemur ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Lemur ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Lemur
@@ -443,8 +443,8 @@
   
 /** @brief prosedur Interact dari objek Orca
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Orca ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Orca ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Orca
@@ -464,8 +464,8 @@
   
 /** @brief prosedur Interact dari objek Dolphin
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Dolphin ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Dolphin ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Dolphin
@@ -485,8 +485,8 @@
   
 /** @brief prosedur Interact dari objek Beluga
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Beluga ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Beluga ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Beluga
@@ -506,8 +506,8 @@
   
 /** @brief prosedur Interact dari objek Cockatoo
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Cockatoo ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Cockatoo ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Cockatoo
@@ -527,8 +527,8 @@
   
 /** @brief prosedur Interact dari objek Parrots
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Parrots ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Parrots ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Parrots
@@ -548,8 +548,8 @@
   
 /** @brief prosedur Interact dari objek Owl
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Owl ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Owl ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Owl
@@ -569,8 +569,8 @@
   
 /** @brief prosedur Interact dari objek Cassowary
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Cassowary ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Cassowary ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Cassowary
@@ -590,8 +590,8 @@
   
 /** @brief prosedur Interact dari objek Swan
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Swan ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Swan ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Swan
@@ -611,8 +611,8 @@
   
 /** @brief prosedur Interact dari objek Duck
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Duck ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Duck ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Duck
@@ -632,8 +632,8 @@
   
 /** @brief prosedur Interact dari objek Great White Shark
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Great White Shark ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Great White Shark ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Great White Shark
@@ -653,8 +653,8 @@
   
 /** @brief prosedur Interact dari objek Python
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Python ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Python ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Python
@@ -674,13 +674,10 @@
   
 /** @brief prosedur Interact dari objek Chameleon
   * I.S hewan telah dihidupkan
-  * F.S suara hewan tercetak ke layar
-  * Mencetak suara Chameleon ke layar
+  * F.S interaksi hewan tercetak ke layar
+  * Mencetak interaksi Chameleon ke layar
   */
   
 /** @brief Mengembalikan nilai character kode dari objek Chameleon
   * Character ini nantinya yang siap di Print ke layar
   */
-
- 
-
