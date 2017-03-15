@@ -55,3 +55,9 @@ v3.3 (15/03/2017)
 - upload driver.h (dibenerin dari Driver.h)
 - upload driver.cpp (dibenerin dari Driver.cpp)
 - upload main.cpp (dibenerin dari mdriver.cpp)
+
+v3.3 (15/03/2017)
+- upload makefile
+- cara jalanin makefile
+- tulis "make di repository"
+- ./mrdriver
