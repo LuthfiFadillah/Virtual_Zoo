@@ -1,6 +1,6 @@
-include "Driver.h"
+#include "driver.h"
 #include <iostream>
-#include "Zoo.h"
+#include "zoo.h"
 using namespace std;
   /*@brief display main menu
    */
